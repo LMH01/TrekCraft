@@ -19,19 +19,20 @@ public class TrekCraft {
 
     /*Used to be Pre Init*/
     private void setup(final FMLCommonSetupEvent event) {
-        DebugHelperLite.sendDebugInformation("Beginning Pre-Init", 2, 0);
-        SubModManager.registerSubMod(References.MODID, References.NAME, References.VERSION, "https://www.dropbox.com/s/jfnwnir72c2b0ix/newestVersion.txt?dl=1", "https://www.curseforge.com/minecraft/mc-mods/trek-craft-1-16/files");
+        DebugHelperLite.sendDebugInformation("Beginning Pre-Init", 4);
+        SubModManager.registerSubMod(References.MODID, References.NAME, References.VERSION, References.UPDATE_URL, References.DOWNLOAD_URL);
+
     }
 
     /*Thinks in here only run on client side*/
     private void clientRegistries(final FMLClientSetupEvent event) {
-        DebugHelperLite.sendDebugInformation("Hello from clientRegistries", 2, 0);
+        DebugHelperLite.sendDebugInformation("Hello from clientRegistries", 4);
     }
 
     /*Used to be Post-Init*/
     private void processIMC(final InterModProcessEvent event) {
-        DebugHelperLite.sendDebugInformation("Starting postInit",2, 0);
+        DebugHelperLite.sendDebugInformation("Starting postInit",4);
 
-        DebugHelperLite.sendDebugInformation("Trek Craft loading complete:",2, 0);
+        DebugHelperLite.sendDebugInformation("Trek Craft loading complete:",4);
     }
 }

@@ -13,9 +13,8 @@ public class DebugHelperLite {
      *              3 = Warn
      *              4 = Error
      *              5 = Fatal
-     * @param sendFrom - Defines a String that comments the debugInformation
      */
-    public static void sendDebugInformation(String debugInformation, int level, int sendFrom){
-        DebugHelper.sendDebugInformation(debugInformation, level, sendFrom, References.MODID);
+    public static void sendDebugInformation(String debugInformation, int level){
+        DebugHelper.sendDebugInformation(debugInformation, level, References.MODID);
     }
 }
